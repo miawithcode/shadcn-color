@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { type TButton } from "@/lib/types";
 
-export const buttons: TButton[] = [
+const buttons: TButton[] = [
   {
     label: "default",
     background: "primary",
