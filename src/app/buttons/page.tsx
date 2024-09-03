@@ -1,5 +1,41 @@
 import { Button } from "@/components/ui/button";
-import { buttons } from "@/lib/constants";
+import { type TButton } from "@/lib/types";
+
+export const buttons: TButton[] = [
+  {
+    label: "default",
+    background: "primary",
+    text: "primary-foreground",
+    hover: "bg-primary/90",
+  },
+  {
+    label: "secondary",
+    background: "secondary",
+    text: "secondary-foreground",
+    hover: "bg-secondary/80",
+  },
+  {
+    label: "outline",
+    border: "input",
+    background: "background",
+    text: "secondary-foreground",
+    hover: "bg-accent text-accent-foreground",
+  },
+  {
+    label: "destructive",
+    background: "destructive",
+    text: "destructive-foreground",
+    hover: "bg-destructive/90",
+  },
+  {
+    label: "ghost",
+    hover: "bg-accent text-accent-foreground",
+  },
+  {
+    label: "link",
+    text: "primary",
+  },
+];
 
 export default function Page() {
   return (

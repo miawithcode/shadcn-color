@@ -1,10 +1,10 @@
-export type Color = {
+export type TColor = {
   label: string;
   background: string;
   hsl: string;
 };
 
-export type Button = {
+export type TButton = {
   label:
     | "link"
     | "default"

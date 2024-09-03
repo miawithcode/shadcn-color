@@ -4,7 +4,7 @@ import {
   designColors,
   elementColors,
 } from "@/lib/constants";
-import { Color } from "@/lib/types";
+import { type TColor } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
@@ -43,7 +43,7 @@ function ColorHeading({ children }: { children: React.ReactNode }) {
   return <h2 className="mb-2 text-2xl font-bold">{children}</h2>;
 }
 
-function ColorList({ colors }: { colors: Color[] }) {
+function ColorList({ colors }: { colors: TColor[] }) {
   return (
     <div className="grid w-full grid-cols-2 gap-4 text-center">
       {colors.map((color) => (

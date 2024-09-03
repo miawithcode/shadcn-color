@@ -1,6 +1,6 @@
-import { Button, Color } from "./types";
+import { type TColor } from "./types";
 
-export const baseColors: Color[] = [
+export const baseColors: TColor[] = [
   { label: "background", background: "bg-background", hsl: "hsl(0 0% 100%)" },
   {
     label: "foreground",
@@ -9,7 +9,7 @@ export const baseColors: Color[] = [
   },
 ];
 
-export const elementColors: Color[] = [
+export const elementColors: TColor[] = [
   { label: "card", background: "bg-card", hsl: "hsl(0 0% 100%)" },
   {
     label: "card-foreground",
@@ -27,7 +27,7 @@ export const elementColors: Color[] = [
   { label: "ring", background: "bg-ring", hsl: "hsl(240 10% 3.9%)" },
 ];
 
-export const designColors: Color[] = [
+export const designColors: TColor[] = [
   { label: "primary", background: "bg-primary", hsl: "hsl(240 5.9% 10%)" },
   {
     label: "primary-foreground",
@@ -68,46 +68,10 @@ export const designColors: Color[] = [
   },
 ];
 
-export const chartColors: Color[] = [
+export const chartColors: TColor[] = [
   { label: "chart-1", background: "bg-chart-1", hsl: "hsl(12 76% 61%)" },
   { label: "chart-2", background: "bg-chart-2", hsl: "hsl(173 58% 39)" },
   { label: "chart-3", background: "bg-chart-3", hsl: "hsl(197 37% 24)" },
   { label: "chart-4", background: "bg-chart-4", hsl: "hsl(43 74% 66%)" },
   { label: "chart-5", background: "bg-chart-5", hsl: "hsl(27 87% 67%)" },
-];
-
-export const buttons: Button[] = [
-  {
-    label: "default",
-    background: "primary",
-    text: "primary-foreground",
-    hover: "bg-primary/90",
-  },
-  {
-    label: "secondary",
-    background: "secondary",
-    text: "secondary-foreground",
-    hover: "bg-secondary/80",
-  },
-  {
-    label: "outline",
-    border: "input",
-    background: "background",
-    text: "secondary-foreground",
-    hover: "bg-accent text-accent-foreground",
-  },
-  {
-    label: "destructive",
-    background: "destructive",
-    text: "destructive-foreground",
-    hover: "bg-destructive/90",
-  },
-  {
-    label: "ghost",
-    hover: "bg-accent text-accent-foreground",
-  },
-  {
-    label: "link",
-    text: "primary",
-  },
 ];
