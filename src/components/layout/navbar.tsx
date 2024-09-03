@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav className="border-b border-border py-4">
-      <ul className="flex items-center justify-center gap-4">
+      <ul className="flex items-center gap-4">
         {routes.map((route) => (
           <li key={route.label}>
             <Link
